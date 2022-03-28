@@ -19,23 +19,27 @@ const TuitListItem = ({tuit}) => {
                         <span>
                             <div className="fw-bold d-inline">{tuit.handle} </div>
                             <div className="text-muted d-inline"><b>@{tuit.postedBy.username}</b></div>
-                            <i onClick={() => deleteTuit(tuit)} className="fas fa-trash float-end"></i>
+                            <i onClick={() => deleteTuit(tuit)} className="fa fa-window-close float-end"></i>
                         </span> <br />
                         {tuit.tuit} <br />
-                        {tuit.attachments ?
-                            (tuit.attachments.video ?
-                                <div>
-                                    <iframe width="540" height="300" src={"https://www.youtube.com/embed/" + tuit.attachments.video}
-                                            title="YouTube video player" frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            className="wd-tuit-list-item-attachment-video"
-                                            allowFullScreen>
+                        <div>
+                            {tuit.attachments ?
+                                (tuit.attachments.video ?
+                                    <div>
+                                        <iframe width="540" height="300" src={"https://www.youtube.com/embed/" + tuit.attachments.video}
+                                                title="YouTube video player" frameBorder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                className="wd-tuit-list-item-attachment-video"
+                                                allowFullScreen>
 
-                                    </iframe>
-                                </div>
-                                : <div className="wd-tuit-list-item-attachment-img"><img className="w-100" src={tuit.attachments.image}/></div>)
-                            : <div></div>}
-                        <TuitStats tuit={tuit}/>
+                                        </iframe>
+                                    </div>
+                                    : <div><img className="wd-tuit-list-item-attachment-img" src={tuit.attachments.image}/></div>)
+                                : <div></div>}
+                        </div>
+                        <div>
+                            <TuitStats tuit={tuit}/>
+                        </div>
                     </div>
                 </li>
             </div>

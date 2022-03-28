@@ -7,7 +7,7 @@ const TuitStats = ({tuit}) => {
         dispatch({type: 'like-tuit', tuit});
     };
     return (
-        <div className="d-flex flex-row justify-content-between align-items-end">
+        <div className="d-flex flex-row justify-content-between align-items-end pt-2 w-75">
             <div><i className="fas fa-comment pe-1"></i>{tuit.stats.comments}</div>
             <div><i className="fas fa-retweet pe-1"></i>{tuit.stats.retuits}</div>
             <span onClick={likeTuit}>
