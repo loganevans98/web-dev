@@ -1,7 +1,7 @@
 import React from "react";
 import PostSummaryList from "../PostSummaryList/index";
-import './vendors/bootstrap/css/bootstrap.min.css';
-import './vendors/bootstrap/bootstrap.min.css';
+import '../../../vendors/bootstrap/css/bootstrap.min.css';
+import '../../../vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import "./explore.css";
 
