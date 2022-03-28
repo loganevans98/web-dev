@@ -1,6 +1,6 @@
 import PostSummaryList from "../PostSummaryList/index.js";
 
-const ExploreComponent = () => {
+const OldExploreComponent = () => {
     return(`
           <div class="d-flex align-items-center mb-2">
             <div class="input-group">
@@ -35,4 +35,4 @@ const ExploreComponent = () => {
           ${PostSummaryList()}
     `);
 }
-export default ExploreComponent;
+export default OldExploreComponent;

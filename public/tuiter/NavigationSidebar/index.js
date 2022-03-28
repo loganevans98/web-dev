@@ -4,7 +4,7 @@ const NavigationSidebar = () => {
                 <a class="list-group-item" href="/">
                     <i class="fab fa-twitter fa-inverse"></i>
                     </a>
-                    <a href="../home.html" class="list-group-item list-group-item-action">
+                    <a href="../old-home.html" class="list-group-item list-group-item-action">
                         <i class="fas fa-home"></i> <span class="d-xl-inline d-lg-none d-md-none d-sm-none">Home</span>
                     </a>
                     <a href="../explore.html" class="list-group-item list-group-item-action active" aria-current="true">
