@@ -1,8 +1,9 @@
 import React from "react";
 import ExploreComponent from "./ExploreComponent";
+
 const ExploreScreen = () => {
     return(
-        <ExploreComponent/>
+        <ExploreComponent />
     );
 };
 export default ExploreScreen;
