@@ -11,7 +11,7 @@
         "userName": "Virgin Galactic",
         "handle": "virgingalactic"
     },
-    {   "avatarIcon": "../../tuiter/nasa.png",
+    {   "avatarIcon": "../images/nasa.png",
         "userName": "NASA",
         "handle": "NASA"
     },
