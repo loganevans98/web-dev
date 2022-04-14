@@ -12,6 +12,7 @@ const TuitStats = ({tuit}) => {
                     Likes: {tuit.likes}
                     <i onClick={() => updateTuit(dispatch, {
                         ...tuit,
+                        liked: true,
                         likes: tuit.likes + 1
                     })} className={`far fa-thumbs-up ms-2 ${tuit.liked ? "wd-tuit-like" : ""}`}></i>
                     </div>
@@ -20,6 +21,7 @@ const TuitStats = ({tuit}) => {
                         Dislikes: {tuit.dislikes}
                         <i onClick={() => updateTuit(dispatch, {
                             ...tuit,
+                            disliked: true,
                             dislikes: tuit.dislikes + 1
                         })} className={`far fa-thumbs-down ms-2 ${tuit.disliked ? "wd-tuit-like" : ""}`}></i>
                     </div>
